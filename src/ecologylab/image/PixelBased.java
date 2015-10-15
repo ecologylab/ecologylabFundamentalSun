@@ -15,7 +15,6 @@ import java.net.URL;
 
 import ecologylab.concurrent.BasicSite;
 import ecologylab.concurrent.Downloadable;
-import ecologylab.concurrent.DownloadableLogRecord;
 import ecologylab.generic.Colors;
 import ecologylab.generic.ConsoleUtils;
 import ecologylab.generic.MathTools;
@@ -877,20 +876,6 @@ implements Downloadable, Colors
 	public ParsedURL getDownloadLocation()
 	{
 		return location();
-	}
-
-  @Override
-  public boolean isCached()
-  {
-    // TODO Auto-generated method stub
-    return false;
-  }
-
-	@Override
-	public DownloadableLogRecord getLogRecord() 
-	{
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }
